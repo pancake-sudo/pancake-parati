@@ -77,13 +77,27 @@ function mostrarPantalla(id) {
   document.getElementById(id).classList.add("visible");
 }
 
+const frases = [
+    "Te amo ❤️",
+    "Dormilona ❤️",
+    "Eres la indicada ❤️",
+    "Mi luz ❤️",
+    "Tan increíble ❤️",
+    "Vales totalmente la pena ❤️",
+    "Mi felicidad ❤️",
+    "Me encantas ❤️",
+    "Mi Snoopy ❤️",
+    "Te quiero mucho ❤️"
+];
+
 function mostrarCarta() {
   mostrarPantalla("carta");
   setInterval(() => {
     for (let i = 0; i < 20; i++) {
       const texto = document.createElement("div");
       texto.className = "teAmoMatrix";
-      texto.innerText = "Te amo ❤️";
+      const randomIndex = Math.floor(Math.random() * frases.length);
+      texto.innerText = frases[randomIndex];
       texto.style.left = Math.random() * 100 + "vw";
       texto.style.top = "-30px";
       texto.style.fontSize = Math.random() * 18 + 14 + "px";
