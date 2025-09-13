@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Amor 💕 by AlexDev</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+<canvas id="matrixCanvas"></canvas>
+
+<div id="inicio" class="pantalla visible">
+  <button onclick="reproducirMusica()">🎵 Reproducir música</button>
+</div>
+
+<div id="candado" class="pantalla">
+  <div id="pista-texto">Pista: apodo</div>
+  <input id="password" type="password" placeholder="Password" />
+  <button onclick="verificar()">Entrar</button>
+</div>
+
+<div id="carga" class="pantalla">
+  <div class="barra-carga"><div></div></div>
+</div>
+
+<div id="carta" class="pantalla">
+  <div id="cartaTexto">
+    <h1>Cuanto más tiempo estoy <br> contigo, más te amo.❤️‍🔥</h1>
+    <img src="Amor.png" alt="Amor" class="final-image">
+  </div>
+</div>
+
+<!-- Audio ajustado para que sea funcional pero invisible -->
+<audio id="musica" src="cancion.mp3" preload="auto"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
